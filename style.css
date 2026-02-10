@@ -1,0 +1,112 @@
+*{
+margin:10px;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#020617;
+color:white;
+}
+
+header{
+background:#020617;
+padding:20px;
+position:fixed;
+width:100%;
+top:0;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+max-width:1200px;
+margin:auto;
+}
+
+nav ul{
+display:flex;
+gap:20px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+.hero{
+height:80vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.profile{
+width:180px;
+border-radius:80%;
+border:2px solid #38bdf8;
+margin: bottom 80px;
+}
+
+.buttons a{
+background:#38bdf8;
+color:black;
+padding:10px 30px;
+margin: 25px;
+border-radius:20px;
+text-decoration:none;
+}
+
+.buttons a:hover{
+background:white;
+}
+/* ===== Animations ===== */
+
+.hero, .card, nav, .profile {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Hover Effects ===== */
+
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+  box-shadow: 0 0 20px #38bdf8;
+}
+
+.buttons a:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+/* ===== Better Typography ===== */
+
+h1, h2, h3 {
+  letter-spacing: 1px;
+}
+
+/* ===== Smooth Scroll ===== */
+
+html {
+  scroll-behavior: smooth;
+}
