@@ -6,6 +6,10 @@ const form = document.querySelector('#contact-form');
 const formStatus = document.querySelector('.form-status');
 const submitButton = document.querySelector('.form-submit');
 
+const header = document.querySelector('.header');
+const sectionAnchors = document.querySelectorAll('main section[id]');
+const navAnchorLinks = document.querySelectorAll('.nav-links a');
+
 if (year) {
   year.textContent = new Date().getFullYear();
 }
@@ -34,7 +38,38 @@ document.addEventListener('click', (event) => {
   }
 });
 
+
+const updateHeaderState = () => {
+  if (window.scrollY > 24) {
+    header?.classList.add('scrolled');
+  } else {
+    header?.classList.remove('scrolled');
+  }
+};
+
+const updateActiveNavLink = () => {
+  const currentPosition = window.scrollY + 130;
+
+  sectionAnchors.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+    const id = section.getAttribute('id');
+
+    if (currentPosition >= sectionTop && currentPosition < sectionTop + sectionHeight) {
+      navAnchorLinks.forEach((link) => link.classList.remove('active'));
+      const activeLink = document.querySelector(`.nav-links a[href="#${id}"]`);
+      activeLink?.classList.add('active');
+    }
+  });
+};
+
+updateHeaderState();
+updateActiveNavLink();
+
 window.addEventListener('scroll', () => {
+  updateHeaderState();
+  updateActiveNavLink();
+
   if (window.scrollY > 320) {
     scrollTopBtn?.classList.add('show');
   } else {
