@@ -1,56 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Shaurya Gupta | Software Engineer, AI/ML Learner, Python Developer and Freelancer from Kanpur, India. Portfolio Website.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Shaurya Gupta's modern portfolio featuring projects, services, and contact details."
+    />
+    <title>Shaurya Gupta | Portfolio</title>
 
-<meta name="keywords" content="Shaurya Gupta, Python Developer, AI ML Student, Web Developer, Freelancer, Kanpur">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#home">Skip to content</a>
 
-<meta name="author" content="Shaurya Gupta">
+    <header class="header">
+      <nav class="navbar container">
+        <a href="index.html" class="brand">SG</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">☰</button>
+        <div class="nav-right">
+        <ul class="nav-links" id="primary-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="credentials.html">Credentials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+          <a href="contact.html" class="btn nav-cta">Hire Me</a>
+        </div>
+      </nav>
+    </header>
 
-<title>Shaurya Gupta | Portfolio</title>
+    <main>
+      <section id="home" class="hero section">
+        <div class="hero-glow hero-glow-left"></div>
+        <div class="hero-glow hero-glow-right"></div>
+        <div class="grid-overlay"></div>
+        <div class="container hero-layout">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Available for freelance</p>
+            <h1>Hi, I’m <span>Shaurya Gupta</span><br />Building digital products that feel premium.</h1>
+            <p class="tagline">
+              Software engineer focused on high-performance web apps, clean UX, and practical AI integrations.
+            </p>
+            <div class="cta-group">
+              <a href="projects.html" class="btn btn-primary">View Projects</a>
+              <a href="contact.html" class="btn btn-secondary">Contact Me</a>
+              <a href="resume.html" class="btn btn-ghost">View Resume</a>
+            </div>
+            <ul class="hero-metrics">
+              <li><strong>20+</strong><span>Projects Built</span></li>
+              <li><strong>2+</strong><span>Years Learning & Building</span></li>
+              <li><strong>100%</strong><span>Responsive Design</span></li>
+            </ul>
+          </div>
+          <div class="hero-card reveal">
+            <img src="profile.jpg" alt="Shaurya Gupta profile" />
+            <div class="status-pill">Open to work</div>
+          </div>
+        </div>
+      </section>
 
-<link rel="stylesheet" href="style.css">
-</head>
+      <section id="about" class="section">
+        <div class="container about-grid">
+          <div class="section-heading reveal">
+            <p>About</p>
+            <h2>Crafting clean, scalable and user-focused web experiences.</h2>
+          </div>
+          <div class="about-content reveal">
+            <p>
+              I turn ideas into polished digital products with a strong focus on performance, maintainability,
+              and delightful interaction design. My workflow blends modern frontend engineering with thoughtful
+              product thinking so every build is both technically solid and visually refined.
+            </p>
+            <a class="btn btn-secondary" href="about.html">Read Full Story</a>
+            <div class="skills">
+              <article class="skill-card">
+                <h3>Frontend Development</h3>
+                <div class="progress" aria-hidden="true"><span style="--progress: 92%"></span></div>
+              </article>
+              <article class="skill-card">
+                <h3>JavaScript / TypeScript</h3>
+                <div class="progress" aria-hidden="true"><span style="--progress: 88%"></span></div>
+              </article>
+              <article class="skill-card">
+                <h3>Python & AI Integration</h3>
+                <div class="progress" aria-hidden="true"><span style="--progress: 82%"></span></div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<body>
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p>Projects</p>
+            <h2>Selected work</h2>
+          </div>
+          <div class="projects-grid">
+            <article class="card reveal">
+              <img src="https://images.unsplash.com/photo-1551281044-8b61a4f6f2d1?auto=format&fit=crop&w=1200&q=80" alt="Analytics dashboard" />
+              <div class="card-content">
+                <h3>SaaS Analytics Dashboard</h3>
+                <p>Interactive charts, role-based views, and fast-loading UI built for business teams.</p>
+                <div class="card-actions">
+                  <a href="https://github.com/InsaneShaurya" target="_blank" rel="noreferrer" class="btn btn-small">GitHub</a>
+                  <a href="project-analytics.html" class="btn btn-small btn-secondary">Details</a>
+                </div>
+              </div>
+            </article>
+            <article class="card reveal">
+              <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80" alt="Developer workspace" />
+              <div class="card-content">
+                <h3>Developer Portfolio Pro</h3>
+                <p>Brand-first personal site with advanced animations, clean typography, and SEO tuning.</p>
+                <div class="card-actions">
+                  <a href="https://github.com/InsaneShaurya" target="_blank" rel="noreferrer" class="btn btn-small">GitHub</a>
+                  <a href="project-portfolio.html" class="btn btn-small btn-secondary">Details</a>
+                </div>
+              </div>
+            </article>
+            <article class="card reveal">
+              <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80" alt="AI automation" />
+              <div class="card-content">
+                <h3>AI Learning Assistant</h3>
+                <p>Summarization and smart recommendations with a simple interface for students.</p>
+                <div class="card-actions">
+                  <a href="https://github.com/InsaneShaurya" target="_blank" rel="noreferrer" class="btn btn-small">GitHub</a>
+                  <a href="project-ai.html" class="btn btn-small btn-secondary">Details</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
 
-<header>
-<nav>
-<h2>Shaurya</h2>
+      <section id="services" class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p>Services</p>
+            <h2>How I can help</h2>
+          </div>
+          <div class="services-grid">
+            <article class="service-card reveal"><span>⚡</span><h3>Frontend Engineering</h3><p>React-ready, responsive interfaces with smooth interactions.</p><a href="services.html" class="inline-link">Explore service →</a></article>
+            <article class="service-card reveal"><span>🧩</span><h3>API Integration</h3><p>Secure and scalable backend/API connections for real products.</p><a href="services.html" class="inline-link">Explore service →</a></article>
+            <article class="service-card reveal"><span>🤖</span><h3>AI Features</h3><p>Useful ML-powered capabilities integrated into web workflows.</p><a href="services.html" class="inline-link">Explore service →</a></article>
+            <article class="service-card reveal"><span>📈</span><h3>Performance Optimization</h3><p>Speed, accessibility, and conversion-focused improvements.</p><a href="services.html" class="inline-link">Explore service →</a></article>
+          </div>
+        </div>
+      </section>
 
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="resume.html">Resume</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-</header>
+      <section id="credentials" class="section credentials-section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p>Credentials</p>
+            <h2>Certifications, credits & courses</h2>
+          </div>
+          <div class="credentials-grid">
+            <article class="credential-card reveal">
+              <div class="credential-badge">🏆 Certification</div>
+              <h3>Google Data Analytics Professional Certificate</h3>
+              <p>Completed practical training in data cleaning, visualization, and decision-focused reporting.</p>
+              <span class="credential-meta">Coursera · 2024</span><a href="credentials.html" class="inline-link">View credential details →</a>
+            </article>
+            <article class="credential-card reveal">
+              <div class="credential-badge">🎓 Course</div>
+              <h3>Advanced JavaScript & Async Patterns</h3>
+              <p>Mastered modern JavaScript concepts including promises, async workflows, and API architecture.</p>
+              <span class="credential-meta">Udemy · 2024</span><a href="credentials.html" class="inline-link">View course details →</a>
+            </article>
+            <article class="credential-card reveal">
+              <div class="credential-badge">⭐ Credit</div>
+              <h3>Top Performer – Smart India Hackathon Internal Round</h3>
+              <p>Recognized for delivering a complete problem-solution prototype with strong UI and logic.</p>
+              <span class="credential-meta">College Innovation Cell · 2023</span><a href="credentials.html" class="inline-link">View credit details →</a>
+            </article>
+            <article class="credential-card reveal">
+              <div class="credential-badge">🤖 Course</div>
+              <h3>Machine Learning Foundations</h3>
+              <p>Built a base in supervised learning, evaluation methods, and model improvement strategies.</p>
+              <span class="credential-meta">NPTEL · 2023</span><a href="credentials.html" class="inline-link">View course details →</a>
+            </article>
+          </div>
+        </div>
+      </section>
 
+      <section id="contact" class="section">
+        <div class="container contact-wrap reveal">
+          <div>
+            <div class="section-heading">
+              <p>Contact</p>
+              <h2>Let’s build something exceptional.</h2>
+              <a class="btn btn-secondary" href="contact.html">Open full contact page</a>
+            </div>
+            <p class="contact-note">Share your idea, timeline, and goals—I’ll get back with a practical plan.</p>
+            <div class="social-links">
+              <a href="https://www.instagram.com/shaurya_.gupta?igsh=ZzBpN204d3p1ZHZk" target="_blank" rel="noreferrer" aria-label="Instagram">Instagram</a>
+              <a href="https://youtube.com" target="_blank" rel="noreferrer" aria-label="YouTube">YouTube</a>
+              <a href="https://www.linkedin.com/in/shaurya-gupta-495a99368" target="_blank" rel="noreferrer" aria-label="LinkedIn">LinkedIn</a>
+              <a href="https://github.com/InsaneShaurya" target="_blank" rel="noreferrer" aria-label="GitHub">GitHub</a>
+            </div>
+          </div>
+          <form id="contact-form" novalidate>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
 
-<section class="hero">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
 
-<img src="profile.jpg" class="profile">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
 
-<h1>Shaurya Gupta</h1>
+            <p class="form-status" aria-live="polite"></p>
+            <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
 
-<p>Software Engineer | Freelancer</p>
+    <footer class="footer">
+      <p>© <span id="year"></span> Shaurya Gupta. All rights reserved.</p>
+    </footer>
 
-<div class="buttons">
+    <button class="scroll-top" aria-label="Scroll to top">↑</button>
 
-<a href="projects.html">Projects</a>
-<a href="resume.html">Resume</a>
-<a href="contact.html">Contact</a>
-
-</div>
-
-</section>
-
-
-<script src="main.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
-
